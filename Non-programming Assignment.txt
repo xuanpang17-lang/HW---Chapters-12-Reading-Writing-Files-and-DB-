@@ -1,0 +1,41 @@
+1) How to read information from a file?
+
+    Use classes like BufferedReader, FileReader, or Scanner to read text from a file line by line or word by word.
+
+    Alternatively, use Java NIO's Files class (e.g., Files.readAllLines()) for quick, one   line file reading.
+
+    Always remember to close the file stream or use a try   with   resources block to release system resources after reading.
+
+
+
+2) How to write information to a file?
+
+    Use classes like BufferedWriter, FileWriter, or PrintWriter to write text data into a file.
+
+    Specify whether to overwrite the existing file or append to it.
+
+    Use Java NIO's Files.writeString() or Files.write() for simpler, quick writes.
+
+    Always close the writer or flush the stream to ensure data is properly saved to the disk.
+
+
+
+3) What is JDBC?
+
+    JDBC stands for Java Database Connectivity.
+
+    It is an official Java API that defines standard interfaces for how Java applications can connect to and interact with various relational databases (such as MySQL, Oracle, and PostgreSQL).
+
+    It allows developers to use the same Java code to execute SQL queries and updates regardless of the underlying database brand.
+
+
+
+4) How to connect your Java program to a database?
+
+    Add the specific database JDBC driver (like a MySQL connector JAR) to the project.
+
+    Use DriverManager.getConnection(url, username, password) with the proper database URL, username, and password to establish a Connection object.
+
+    Use the connection object to create statements and execute SQL operations.
+
+    Close the connection and associated resources when the operations are complete
